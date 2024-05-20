@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+    <script>
+        function f1(f)
+        {
+            var x=parseFloat(f.t1.value)
+            var y=((x-32)/9)*5
+            document.getElementById("demo2").value=y;
+        }
+    </script>
+</head>
+<body>
+    <table align="center" width="50%">
+        <h1>Temperature Conversion Program</h1>
+        <form>
+        <tr>
+            <td id="c1"><h3>Temp.in Feranite</h3></td>
+            <td id="c2"><h3>Temp.in Centigrade</h3></td>
+        </tr>
+        <tr>
+        <td><input type="text" id="demo1" name="t1"></td>
+        <td><input type="text" id="demo2" placeholder=""></td>
+    </tr>
+         <tr >
+            <td align="center" colspan="2">
+                <input type="button" value="Convert" id="d1" onclick="f1(this.form)"></td>
+         </tr>
+         </form>
+    </table>
+    <h3 id=a1>Copyright@2024</h3>
+</body>
+</html>
